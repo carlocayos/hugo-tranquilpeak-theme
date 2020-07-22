@@ -4,7 +4,8 @@
       <i class="fa fa-remove"></i>
     </div>
     {{ with ($.Scratch.Get "authorPicture") }}
-      <img id="about-card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
+      <!-- <img id="about-card-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" /> -->
+      <img id="about-card-picture" src="https://res.cloudinary.com/ccayos/image/upload/c_scale,w_250/v1595388346/carlocayos%20blog/output-onlinejpgtools_k6x1od.jpg" />
     {{ end }}
     <h4 id="about-card-name">{{ .Site.Author.name }}</h4>
     {{ with .Site.Author.bio }}
